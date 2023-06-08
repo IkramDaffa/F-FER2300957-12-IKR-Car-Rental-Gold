@@ -1,3 +1,4 @@
+// *FAQ
 var acc = document.getElementsByClassName("faq_pertanyaan");
 var i;
 
@@ -12,18 +13,55 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+// *akhir FAQ
 
-var navbut = document.getElementsByClassName("navbar-toggler");
-console.log(navbut);
+// *navbar
+// var navbut = document.getElementsByClassName("navbar-toggler");
+// for (i = 0; i < navbut.length; i++) {
+//   navbut[i].addEventListener("click", function () {
+//     var collaps = this.nextElementSibling;
+//     if (collaps.style.right === "-100%") {
+//       collaps.style.right = "0";
+//     } else {
+//       collaps.style.right = "-100%";
+//     }
+//   });
+// }
 
-for (i = 0; i < navbut.length; i++) {
-  navbut[i].addEventListener("click", function () {
-    var collaps = this.nextElementSibling;
-    console.log(collaps);
-    if (collaps.style.display === "none") {
-      collaps.style.display = "block";
-    } else {
-      collaps.style.display = "none";
-    }
+const navbarNav = document.querySelector(".collaps_nav");
+const tombol = document.querySelector(".navbar-toggler");
+const exitbut = document.querySelector(".exitbut");
+document.querySelector(".navbar-toggler").onclick = () => {
+  // tombol.classList.toggle("activebutnav");
+  navbarNav.classList.toggle("activeNAV");
+  exitbut.classList.toggle("activeexit");
+  // exitbut.style.display = "block";
+};
+
+document.addEventListener("click", function (e) {
+  if (!tombol.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("activeNAV");
+    // tombol.classList.remove("activebutnav");
+    exitbut.classList.remove("activeexit");
+    // exitbut.style.display = "none";
+  }
+});
+
+document.querySelector(".tmblexit").onclick = () => {
+  navbarNav.classList.remove("activeNAV");
+  // tombol.classList.remove("activebutnav");
+  exitbut.classList.remove("activeexit");
+  // exitbut.style.display = "none";
+};
+
+var navcon = document.getElementsByClassName("nav-link");
+console.log(navcon);
+for (i = 0; i < navcon.length; i++) {
+  navcon[i].addEventListener("click", function () {
+    navbarNav.classList.remove("activeNAV");
+    // tombol.classList.remove("activebutnav");
+    exitbut.classList.remove("activeexit");
+    // exitbut.style.display = "none";
   });
 }
+// *akhir navbar

@@ -2,18 +2,49 @@
 
 @media (max-width: 992px) {
   .collaps_nav {
-    display: none;
-    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background-color: white;
+    width: 180px;
+    height: 100vh;
+    transition: 0.3s;
+    padding: 16px;
   }
   .navbar-link {
     font-family: "Arial";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-
     color: #000000;
   }
+  .activeNAV {
+    right: 0;
+    top: 0;
+  }
+  .activebutnav {
+    display: none;
+  }
 
+  .exitbut {
+    display: none;
+  }
+  .activeexit {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tmblexit {
+    background: white;
+    border: 0;
+    width: 30px;
+    height: 30px;
+  }
+  .BCR {
+    padding-top: 9px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 14px;
+  }
   .kotakbir {
     background-color: #0d28a6;
     height: 34px;
@@ -47,6 +78,9 @@
     border-bottom: 3px solid blue;
     margin: auto;
     margin-bottom: -3px;
+  }
+  .exitbut {
+    display: none;
   }
   .kotakbir {
     background-color: #0d28a6;
