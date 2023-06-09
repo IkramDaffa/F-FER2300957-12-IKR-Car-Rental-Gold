@@ -100,7 +100,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    padding-right: 32px;
   }
   .banner_info .wrap_info {
     max-width: 568px;
@@ -179,15 +180,14 @@
     width: 100%;
   }
 }
-.point i {
-  background-color: #cfd4ed;
-  color: #0d28a6;
-  border-radius: 50%;
+/* *banner2 */
+
+.point img {
+  margin-right: 16px;
   height: 24px;
   width: 24px;
 }
 
-/* *banner2 */
 @media (min-width: 992px) {
   .banner2 {
     background-color: white;
@@ -200,7 +200,8 @@
     flex-wrap: wrap;
     width: 50%;
     align-items: end;
-    justify-content: center;
+    justify-content: end;
+    padding-right: 86px;
   }
   .wrap_gambar img {
     height: 428px;
@@ -264,15 +265,39 @@
 }
 
 /* *tanya */
+.tanya {
+  display: flex;
+  flex-direction: column;
+}
+.tanya .jawaban {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap_jawaban .jawab {
+  border: 1px solid black;
+  height: 196px;
+  width: 268px;
+  padding: 24px;
+  border-radius: 8px;
+}
+.wrap_jawaban .jawab img {
+  margin-bottom: 16px;
+}
+.wrap_jawaban .jawab p {
+  font-weight: bold;
+  font-family: arial;
+  font-size: 14px;
+}
+.wrap_jawaban .jawab .judul {
+  font-size: 16px;
+}
 @media (min-width: 992px) {
-  .tanya {
-    display: flex;
-    flex-direction: column;
-  }
   .pertanyaan {
     display: flex;
     width: 50%;
-    justify-content: center;
+    justify-content: end;
+    padding-right: 315px;
   }
   .pertanyaan .wrap_pertanyaan {
     max-width: 468px;
@@ -288,53 +313,14 @@
     font-size: 14px;
     font-weight: bold;
   }
-  .jawaban {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+
   .wrap_jawaban {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 32px;
   }
-  .jawab1 {
-    border: 1px solid black;
-    height: 196px;
-    width: 268px;
-    padding: 24px;
-    border-radius: 8px;
-  }
-  .jawab2 {
-    border: 1px solid black;
-    height: 196px;
-    width: 268px;
-    padding: 24px;
-    border-radius: 8px;
-  }
-  .jawab3 {
-    border: 1px solid black;
-    height: 196px;
-    width: 268px;
-    padding: 24px;
-    border-radius: 8px;
-  }
-  .jawab4 {
-    border: 1px solid black;
-    height: 196px;
-    width: 268px;
-    padding: 24px;
-    border-radius: 8px;
-  }
-  .wrapjawab1 {
-    padding: 0%;
-  }
 }
 @media (max-width: 992px) {
-  .tanya {
-    display: flex;
-    flex-direction: column;
-  }
   .pertanyaan {
     display: flex;
     justify-content: center;
@@ -352,46 +338,10 @@
     font-weight: bold;
     justify-content: center;
   }
-  .jawaban {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
   .wrap_jawaban {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 32px;
-  }
-  .jawab1 {
-    border: 1px solid black;
-    height: 196px;
-    width: 268px;
-    padding: 24px;
-    border-radius: 8px;
-  }
-  .jawab2 {
-    border: 1px solid black;
-    height: 196px;
-    width: 268px;
-    padding: 24px;
-    border-radius: 8px;
-  }
-  .jawab3 {
-    border: 1px solid black;
-    height: 196px;
-    width: 268px;
-    padding: 24px;
-    border-radius: 8px;
-  }
-  .jawab4 {
-    border: 1px solid black;
-    height: 196px;
-    width: 268px;
-    padding: 24px;
-    border-radius: 8px;
-  }
-  .wrapjawab1 {
-    padding: 0%;
   }
 }
 /* *testimoni */
@@ -601,7 +551,8 @@
   .faq .jdl_faq {
     display: flex;
     width: 50%;
-    justify-content: center;
+    justify-content: end;
+    padding-right: 132px;
   }
   .faq .jdl_faq .judul {
     font-family: Arial;
@@ -732,4 +683,7 @@
   font-family: Arial;
   font-weight: bold;
   font-size: 14px;
+}
+.connect_us img {
+  margin-right: 16px;
 }
