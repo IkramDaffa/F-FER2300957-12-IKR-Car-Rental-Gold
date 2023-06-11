@@ -93,49 +93,7 @@
   .banner {
     background-color: #f1f3ff;
     display: flex;
-    height: 504px;
-  }
-  .banner_info {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: end;
-    padding-right: 32px;
-  }
-  .banner_info .wrap_info {
-    max-width: 568px;
-  }
-  .banner_info .info {
-    color: black;
-    font-size: 36px;
-    font-weight: 700;
-  }
-
-  .banner_info .deskripsi {
-    color: black;
-    font-size: 14px;
-    font-weight: 700;
-  }
-  .tombol_sewa {
-    background-color: #5cb85f;
-    color: white;
-    padding: 10px;
-  }
-  .banner_mobil {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: end;
-    justify-content: start;
-    padding-left: 100px;
-  }
-  .wrap_img {
-    max-width: 704px;
-  }
-  .wrap_img img {
-    height: 400px;
-    width: 100%;
+    height: 256px;
   }
 }
 @media (max-width: 992px) {
@@ -146,48 +104,21 @@
     width: 100%;
     flex-direction: column;
   }
-  .banner_info {
-    display: flex;
-    justify-content: center;
-  }
-  .banner_info .wrap_info {
-    max-width: 328px;
-  }
-  .banner_info .info {
-    color: black;
-    font-size: 36px;
-    font-weight: 700;
-  }
-  .banner_info .deskripsi {
-    color: black;
-    font-size: 14px;
-    font-weight: 700;
-  }
-  .tombol_sewa {
-    background-color: #5cb85f;
-    color: white;
-    padding: 10px;
-  }
-  .banner_mobil {
-    padding-left: 10px;
-    padding-top: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .wrap_img img {
-    height: 250px;
-    width: 100%;
-  }
 }
 /* *search */
 
 .pencarian_mobil button {
   font-size: 14px;
 }
+.color_text {
+  color: #0d28a6;
+  font-weight: bold;
+}
+
 select:invalid {
   color: gray;
 }
+
 @media (min-width: 992px) {
   .pencarian_mobil {
     bottom: 50px;
@@ -207,6 +138,38 @@ select:invalid {
   .pencarian_mobil button {
     margin-top: 10px;
   }
+}
+/* *detail mobil */
+.detail {
+  max-width: 1074px;
+  position: relative;
+  bottom: 20px;
+  margin-bottom: 150px;
+}
+.wrap_mbl img {
+  max-width: 270px;
+  max-height: 160px;
+}
+.detail_kanan {
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 700;
+}
+.jmlh_org {
+  font-size: 10px;
+  color: #8a8a8a;
+}
+.detail_kiri {
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.detail_kiri li {
+  color: gray;
+}
+#refund button {
+  font-weight: bold;
+  font-size: 14px;
 }
 
 /* *footer */
