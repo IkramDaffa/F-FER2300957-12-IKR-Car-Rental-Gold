@@ -17,9 +17,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
     <!-- my css -->
-    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/car detail.css" />
 
-    <title>Cari Mobil</title>
+    <title>Detail Mobil</title>
   </head>
   <body>
     <!-- *navbar -->
@@ -55,23 +55,7 @@
     </nav>
     <!-- *akhir navbar -->
     <!-- *banner -->
-    <div class="banner">
-      <div class="banner_info">
-        <div class="wrap_info">
-          <p class="info">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</p>
-          <p class="deskripsi">
-            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
-            terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
-            untuk sewa mobil selama 24 jam.
-          </p>
-        </div>
-      </div>
-      <div class="banner_mobil">
-        <div class="wrap_img">
-          <img src="assets/img/img_car.png" alt="gambar mobil" />
-        </div>
-      </div>
-    </div>
+    <div class="banner"></div>
     <!-- *akhir banner -->
 
     <!-- *search -->
@@ -95,9 +79,9 @@
                   <option value="" disabled selected hidden>
                     Masukkan Kapasitas Mobil
                   </option>
-                  <option value="">2-4 orang</option>
-                  <option value="">4-6 orang</option>
-                  <option value="">6-8 orang</option>
+                  <option value="0">2-4 orang</option>
+                  <option value="1">4-6 orang</option>
+                  <option value="2">6-8 orang</option>
                 </select>
               </div>
               <div class="col-md-3">
@@ -106,27 +90,169 @@
                   <option value="" disabled selected hidden>
                     Masukkan Harga Sewa per Hari
                   </option>
-                  <option value="">&lt; Rp.400.000</option>
-                  <option value="">Rp.400.000-Rp.600.000</option>
-                  <option value="">&gt; Rp.600.000</option>
+                  <option value="0">&lt; Rp.400.000</option>
+                  <option value="1">Rp.400.000-Rp.600.000</option>
+                  <option value="2">&gt;Rp.600.000</option>
                 </select>
               </div>
               <div class="col-md-3">
                 <label for="status_mobil" class="form-label">Status</label>
                 <select class="form-select" id="status_mobil" required>
-                  <option value="">Disewa</option>
-                  <option value="">Belum Disewa</option>
+                  <option value="1">Disewa</option>
+                  <option value="2">Belum Disewa</option>
                 </select>
               </div>
             </div>
           </div>
           <div class="col-md-2 d-flex align-items-end">
-            <button type="button" class="btn btn-success">Cari Mobil</button>
+            <button type="button" class="btn border-primary color_text">
+              Edit
+            </button>
           </div>
         </div>
       </div>
     </div>
     <!-- *akhir search -->
+    <!-- *detail mobil -->
+    <div class="container detail">
+      <div class="row">
+        <div class="detail_kiri col-6">
+          <div class="card">
+            <div class="card-body">
+              <p>Tentang Paket</p>
+              <p>Include</p>
+              <ul>
+                <li>
+                  Apa saja yang termasuk dalam paket misal durasi max 12 jam
+                </li>
+                <li>Sudah termasuk bensin selama 12 jam</li>
+                <li>Sudah termasuk Tiket Wisata</li>
+                <li>Sudah termasuk pajak</li>
+              </ul>
+              <p>Exclude</p>
+              <ul>
+                <li>
+                  Tidak termasuk biaya makan sopir Rp 75.000/hari Jika overtime
+                </li>
+                <li>
+                  lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam Tidak
+                </li>
+                <li>termasuk akomodasi penginapan</li>
+              </ul>
+              <!-- !accordion -->
+              <div class="accordions" id="refund">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button mb-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#refund_detail"
+                      aria-expanded="true"
+                      aria-controls="refund"
+                    >
+                      Refund, Reschedule, Overtime
+                    </button>
+                  </h2>
+                  <div
+                    id="refund_detail"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          Tidak termasuk biaya makan sopir Rp 75.000/hari Jika
+                          overtime
+                        </li>
+                        <li>
+                          lebih dari 12 jam akan ada tambahan biaya Rp
+                          20.000/jam Tidak
+                        </li>
+                        <li>
+                          termasuk akomodasi penginapan Tidak termasuk biaya
+                          makan sopir
+                        </li>
+                        <li>
+                          Rp 75.000/hari Jika overtime lebih dari 12 jam akan
+                          ada tambahan
+                        </li>
+                        <li>
+                          biaya Rp 20.000/jam Tidak termasuk akomodasi
+                          penginapan Tidak
+                        </li>
+                        <li>
+                          termasuk biaya makan sopir Rp 75.000/hari Jika
+                          overtime lebih
+                        </li>
+                        <li>
+                          dari 12 jam akan ada tambahan biaya Rp 20.000/jam
+                          Tidak termasuk
+                        </li>
+                        <li>akomodasi penginapan</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- !accordion -->
+
+              <!-- <p>Refund, Reschedule, Overtime</p>
+              <ul>
+                <li>
+                  Tidak termasuk biaya makan sopir Rp 75.000/hari Jika overtime
+                </li>
+                <li>
+                  lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam Tidak
+                </li>
+                <li>
+                  termasuk akomodasi penginapan Tidak termasuk biaya makan sopir
+                </li>
+                <li>
+                  Rp 75.000/hari Jika overtime lebih dari 12 jam akan ada
+                  tambahan
+                </li>
+                <li>
+                  biaya Rp 20.000/jam Tidak termasuk akomodasi penginapan Tidak
+                </li>
+                <li>
+                  termasuk biaya makan sopir Rp 75.000/hari Jika overtime lebih
+                </li>
+                <li>
+                  dari 12 jam akan ada tambahan biaya Rp 20.000/jam Tidak
+                  termasuk
+                </li>
+                <li>akomodasi penginapan</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+        <div class="detail_kanan col-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="wrap_mbl d-flex justify-content-center">
+                <img
+                  class="card-img-top"
+                  src="assets/img/image 1.png"
+                  alt="gambar mobil"
+                />
+              </div>
+              <p class="card-title mb-0">Innova</p>
+              <div class="jmlh_org mb-5">
+                <img src="assets/icon/fi_users.png" alt="" />
+                6 - 8 Orang
+              </div>
+              <div class="total_harga d-flex justify-content-between mb-5">
+                <p>Total</p>
+                <p>Rp.500.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- *akhir detail mobil -->
 
     <!-- *Footer -->
     <footer class="text-center text-lg-start">
@@ -187,8 +313,9 @@
     </footer>
 
     <!-- *akhir footer -->
+
     <!-- my javascript -->
-    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/car detail.js"></script>
     <!-- javascript bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
