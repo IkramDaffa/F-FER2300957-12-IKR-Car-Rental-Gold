@@ -365,10 +365,13 @@
     text-align: center;
   }
   .testimoni_content {
+    width: 100%;
     display: grid;
     grid-auto-flow: column;
-    justify-content: center;
+    justify-content: start;
     gap: 32px;
+    overflow: hidden;
+    scroll-behavior: smooth;
   }
   .testi_content {
     width: 619px;
@@ -417,8 +420,10 @@
   .testimoni_content {
     display: grid;
     grid-auto-flow: column;
-    justify-content: center;
+    justify-content: start;
     gap: 32px;
+    overflow: hidden;
+    scroll-behavior: smooth;
   }
   .testi_content {
     width: 328px;

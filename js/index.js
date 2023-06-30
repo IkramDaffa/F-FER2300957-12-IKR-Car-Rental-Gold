@@ -65,3 +65,14 @@ for (i = 0; i < navcon.length; i++) {
   });
 }
 // *akhir navbar
+
+// slider testimoni
+const testimoni = document.querySelector(".testimoni_content");
+document.addEventListener("click", (e) => {
+  if (e.target.className == "scrollkiri") {
+    testimoni.scrollLeft -= 360;
+  }
+  if (e.target.className == "scrollkanan") {
+    testimoni.scrollLeft += 360;
+  }
+});
