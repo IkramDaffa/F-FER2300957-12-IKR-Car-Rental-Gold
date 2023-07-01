@@ -1,0 +1,26 @@
+.pencarian_mobil button {
+  font-size: 14px;
+}
+select:invalid {
+  color: gray;
+}
+@media (min-width: 992px) {
+  .pencarian_mobil {
+    bottom: 50px;
+    max-width: 1074px;
+    font-size: 12px;
+    font-family: Arial;
+  }
+}
+@media (max-width: 992px) {
+  .pencarian_mobil {
+    margin-top: 35px;
+    font-size: 12px;
+    font-family: Arial;
+    max-width: 370px;
+    position: static !important;
+  }
+  .pencarian_mobil button {
+    margin-top: 10px;
+  }
+}

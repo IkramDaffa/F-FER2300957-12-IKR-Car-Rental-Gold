@@ -1,0 +1,19 @@
+.result {
+  font-size: 14px;
+  font-family: arial;
+  margin-bottom: 290px;
+}
+.result .search_content {
+  bottom: 10px;
+}
+.result_img {
+  max-width: 270px !important;
+  max-height: 160px !important;
+}
+.hargaperhari {
+  font-size: 16px;
+  font-weight: bold;
+}
+.result .deskripmbl {
+  font-weight: bold;
+}
