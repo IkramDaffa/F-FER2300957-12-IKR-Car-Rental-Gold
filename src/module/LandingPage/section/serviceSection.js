@@ -1,7 +1,7 @@
 import { Container } from "reactstrap";
 import serviceImg from "../../../assets/img/img_service.png";
 import point from "../../../assets/icon/point.png";
-function serviceSection() {
+function ServiceSection() {
   return (
     <Container className="banner2" id="OurService">
       <div className="banner2_gambar">
@@ -45,4 +45,4 @@ function serviceSection() {
     </Container>
   );
 }
-export default serviceSection;
+export default ServiceSection;

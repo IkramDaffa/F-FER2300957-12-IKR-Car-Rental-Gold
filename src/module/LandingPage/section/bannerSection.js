@@ -1,5 +1,5 @@
 import { Container } from "reactstrap";
-function bannerSection() {
+function BannerSection() {
   return (
     <Container className="banner3">
       <div className="banner3_place">
@@ -23,4 +23,4 @@ function bannerSection() {
     </Container>
   );
 }
-export default bannerSection;
+export default BannerSection;

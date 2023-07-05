@@ -1,10 +1,10 @@
 import Layout from "../../components/Layout";
 import HeroSection from "./section/HeroSection";
-import ServiceSection from "./section/serviceSection";
-import WhyUsSection from "./section/whyUsSection";
-import MyTestimoni from "./section/testimoniSection";
-import BannerSection from "./section/bannerSection";
-import FaqSection from "./section/faqSection";
+import ServiceSection from "./section/ServiceSection";
+import WhyUsSection from "./section/WhyUsSection";
+import MyTestimoni from "./section/TestimoniSection";
+import BannerSection from "./section/BannerSection";
+import FaqSection from "./section/FaqSection";
 function landingPage() {
   return (
     <Layout>

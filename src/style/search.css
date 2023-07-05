@@ -11,6 +11,10 @@ select:invalid {
     font-size: 12px;
     font-family: Arial;
   }
+  .backButton {
+    position: relative;
+    bottom: 35px;
+  }
 }
 @media (max-width: 992px) {
   .pencarian_mobil {
@@ -22,5 +26,8 @@ select:invalid {
   }
   .pencarian_mobil button {
     margin-top: 10px;
+  }
+  .backButton {
+    position: static;
   }
 }

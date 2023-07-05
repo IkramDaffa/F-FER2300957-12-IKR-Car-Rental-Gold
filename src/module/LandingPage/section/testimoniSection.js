@@ -4,7 +4,7 @@ import profil2 from "../../../assets/img/img_photo2.png";
 import tmblkiri from "../../../assets/icon/Left button.png";
 import tmblkanan from "../../../assets/icon/Right button.png";
 import React from "react";
-function myTestimoni() {
+function MyTestimoni() {
   const slideleft = () => {
     const slider = document.querySelector(".testimoni_content");
     const windowWidth = window.innerWidth;
@@ -120,4 +120,4 @@ function myTestimoni() {
   );
 }
 
-export default myTestimoni;
+export default MyTestimoni;

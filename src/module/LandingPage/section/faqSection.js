@@ -6,7 +6,7 @@ import {
   AccordionHeader,
   AccordionItem,
 } from "reactstrap";
-function faqSection() {
+function FaqSection() {
   const [open, setOpen] = useState("");
   const toggle = (id) => {
     if (open === id) {
@@ -87,4 +87,4 @@ function faqSection() {
     </Container>
   );
 }
-export default faqSection;
+export default FaqSection;

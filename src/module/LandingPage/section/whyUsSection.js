@@ -4,7 +4,7 @@ import price from "../../../assets/icon/icon_price.png";
 import hours from "../../../assets/icon/icon_24hrs.png";
 import proffesional from "../../../assets/icon/icon_professional.png";
 
-function whyUsSection() {
+function WhyUsSection() {
   return (
     <>
       <Container className="tanya" id="tanya">
@@ -62,4 +62,4 @@ function whyUsSection() {
     </>
   );
 }
-export default whyUsSection;
+export default WhyUsSection;

@@ -1,6 +1,6 @@
 import { Container } from "reactstrap";
 import mobil from "../../../assets/img/img_car.png";
-function heroSection() {
+function HeroSection() {
   return (
     <Container fluid className="banner pe-0">
       <div className="banner_info">
@@ -27,4 +27,4 @@ function heroSection() {
   );
 }
 
-export default heroSection;
+export default HeroSection;

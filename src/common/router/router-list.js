@@ -1,6 +1,5 @@
 import LandingPage from "../../module/LandingPage";
 import SearchCar from "../../module/searchCar";
-import SearchResult from "../../module/saearchResult";
 import { createBrowserRouter } from "react-router-dom";
 
 const routerList = createBrowserRouter([
@@ -11,10 +10,6 @@ const routerList = createBrowserRouter([
   {
     path: "searchCar",
     element: <SearchCar />,
-  },
-  {
-    path: "searchResult",
-    element: <SearchResult />,
   },
 ]);
 
