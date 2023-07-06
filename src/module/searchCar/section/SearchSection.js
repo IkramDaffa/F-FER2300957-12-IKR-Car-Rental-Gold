@@ -25,7 +25,6 @@ function SearchSection() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [idCar, setIdCar] = useState("");
   const [carDetail, setCarDetail] = useState([]);
   const [open, setOpen] = useState("");
   const [detailOpen, setDetailOpen] = useState(false);
