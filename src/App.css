@@ -27,7 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 32px;
   }
   .banner_info .wrap_info {
@@ -51,8 +51,8 @@
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    align-items: end;
-    justify-content: start;
+    align-items: flex-end;
+    justify-content: flex-start;
     padding-left: 100px;
   }
   .wrap_img {
@@ -123,8 +123,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
     padding-right: 86px;
   }
   .wrap_gambar img {
@@ -133,7 +133,7 @@
   .banner2_info {
     width: 50%;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
   }
   .banner2_info .infor {
     max-width: 468px;
@@ -221,7 +221,7 @@
   .pertanyaan {
     display: flex;
     width: 50%;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 315px;
   }
   .pertanyaan .wrap_pertanyaan {
@@ -486,7 +486,7 @@
   .faq .jdl_faq {
     display: flex;
     width: 50%;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 132px;
   }
   .faq .jdl_faq .judul {
