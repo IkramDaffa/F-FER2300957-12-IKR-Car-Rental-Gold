@@ -1,0 +1,87 @@
+.detail {
+  position: relative;
+  bottom: 20px;
+  margin-bottom: 150px;
+}
+.wrap_mbl img {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+.detail_kanan {
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 700;
+}
+.detailKananCard {
+  padding: 10px;
+}
+.jmlh_org {
+  font-size: 13px;
+  color: #8a8a8a;
+}
+.detail_kiri {
+  font-size: 17px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.detailKiriCard {
+  padding: 10px 50px;
+}
+.detail_kiri li {
+  color: gray;
+}
+/* #refund button {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0px !important;
+} */
+/* .tmbl_accordion {
+  padding-left: 0px;
+} */
+/* .tmbl_accordion:not(.collapsed) {
+  background-color: white !important;
+  box-shadow: none;
+} */
+/* .body_accordion {
+  padding: 0px;
+} */
+
+#refund .accordion-button {
+  padding-left: 0px;
+  font-weight: bold;
+  font-size: 14px;
+}
+#refund .accordion-body {
+  padding: 0px;
+}
+#refund .accordion-button:not(.collapsed) {
+  background-color: white !important;
+  box-shadow: none;
+}
+
+@media (max-width: 992px) {
+  .detail {
+    max-width: 1074px;
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 150px;
+  }
+  .detail .barisDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail_kiri {
+    min-width: 390px;
+  }
+  .detail_kanan {
+    min-width: 390px;
+  }
+  .detailKananCard {
+    padding: 0px;
+  }
+  .detailKiriCard {
+    padding: 0px;
+  }
+}

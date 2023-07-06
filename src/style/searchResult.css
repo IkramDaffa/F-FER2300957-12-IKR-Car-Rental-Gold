@@ -1,0 +1,25 @@
+.result {
+  font-size: 14px;
+  font-family: Arial;
+  margin-bottom: 290px;
+}
+.result .search_content {
+  bottom: 10px;
+}
+.result_img {
+  width: 100%;
+  height: 100%;
+}
+.wrap_gmbrresult {
+  margin-bottom: 20px;
+}
+.hargaperhari {
+  font-size: 16px;
+  font-weight: bold;
+}
+.result .deskripmbl {
+  font-weight: bold;
+}
+.tmbl_detail {
+  width: 100%;
+}

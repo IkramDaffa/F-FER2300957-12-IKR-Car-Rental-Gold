@@ -1,106 +1,33 @@
-/* *navbar */
-
-@media (max-width: 992px) {
-  .collaps_nav {
-    position: absolute;
-    top: 0;
-    right: -100%;
-    background-color: white;
-    width: 180px;
-    height: 100vh;
-    transition: 0.3s;
-    padding: 16px;
-  }
-  .navbar-link {
-    font-family: "Arial";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    color: #000000;
-  }
-  .activeNAV {
-    right: 0;
-    top: 0;
-  }
-  .activebutnav {
-    display: none;
-  }
-
-  .exitbut {
-    display: none;
-  }
-  .activeexit {
-    display: flex;
-    justify-content: space-between;
-  }
-  .tmblexit {
-    background: white;
-    border: 0;
-    width: 30px;
-    height: 30px;
-  }
-  .BCR {
-    padding-top: 9px;
-    font-family: arial;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  .kotakbir {
-    background-color: #0d28a6;
-    height: 34px;
-    width: 100px;
-  }
+/* navbar */
+.logo {
+  height: 34px;
+  width: 100px;
+  font-family: arial;
 }
-
-@media (min-width: 992px) {
-  .navbar .container-fluid {
-    padding-right: 249px;
-    padding-left: 136px;
-  }
-  .navbar-link {
-    font-family: "Arial";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-
-    color: #000000;
-    margin-right: 32px;
-  }
-  .navbar {
-    margin: 0;
-    background-color: #f1f3ff;
-  }
-
-  .nav-link:hover::after {
-    content: "";
-    display: block;
-    width: 50%;
-    border-bottom: 3px solid blue;
-    margin: auto;
-    margin-bottom: -3px;
-  }
-  .exitbut {
-    display: none;
-  }
-  .kotakbir {
-    background-color: #0d28a6;
-    height: 34px;
-    width: 100px;
-  }
+.navigationBar {
+  background-color: #f1f3ff;
 }
-/* *banner */
+.SideBar {
+  width: 180px !important;
+}
+/* hero section */
 @media (min-width: 992px) {
   .banner {
     background-color: #f1f3ff;
     display: flex;
     height: 504px;
   }
+  .bannerSearch {
+    background-color: #f1f3ff;
+    display: flex;
+    height: 256px;
+  }
   .banner_info {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 32px;
   }
   .banner_info .wrap_info {
@@ -118,16 +45,14 @@
     font-weight: 700;
   }
   .tombol_sewa {
-    background-color: #5cb85f;
-    color: white;
     padding: 10px;
   }
   .banner_mobil {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    align-items: end;
-    justify-content: start;
+    align-items: flex-end;
+    justify-content: flex-start;
     padding-left: 100px;
   }
   .wrap_img {
@@ -149,6 +74,7 @@
   .banner_info {
     display: flex;
     justify-content: center;
+    padding-right: 5px;
   }
   .banner_info .wrap_info {
     max-width: 328px;
@@ -164,8 +90,6 @@
     font-weight: 700;
   }
   .tombol_sewa {
-    background-color: #5cb85f;
-    color: white;
     padding: 10px;
   }
   .banner_mobil {
@@ -180,7 +104,7 @@
     width: 100%;
   }
 }
-/* *banner2 */
+/* banner 2 */
 
 .point img {
   margin-right: 16px;
@@ -199,8 +123,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
     padding-right: 86px;
   }
   .wrap_gambar img {
@@ -209,7 +133,7 @@
   .banner2_info {
     width: 50%;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
   }
   .banner2_info .infor {
     max-width: 468px;
@@ -264,7 +188,8 @@
   }
 }
 
-/* *tanya */
+/* tanya */
+
 .tanya {
   display: flex;
   flex-direction: column;
@@ -296,7 +221,7 @@
   .pertanyaan {
     display: flex;
     width: 50%;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 315px;
   }
   .pertanyaan .wrap_pertanyaan {
@@ -344,11 +269,11 @@
     grid-gap: 32px;
   }
 }
-/* *testimoni */
+/* testimoni */
 @media (min-width: 992px) {
   .testimoni {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 20px;
   }
@@ -365,13 +290,13 @@
     text-align: center;
   }
   .testimoni_content {
-    width: 100%;
     display: grid;
     grid-auto-flow: column;
     justify-content: start;
     gap: 32px;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
+    width: 1500px;
   }
   .testi_content {
     width: 619px;
@@ -457,8 +382,8 @@
     margin-top: 24px;
   }
 }
-/* *banner3 */
 
+/* banner3 */
 @media (min-width: 992px) {
   .banner3 {
     display: flex;
@@ -548,13 +473,11 @@
     justify-content: center;
   }
 }
-/* *faq */
-.item_faq {
-  border: 2px solid black;
-  border-top: 0px;
-}
-.item_faq button {
-  border-top: 2px solid black;
+/* faq */
+#faqAccordion {
+  color: black;
+  font-family: Arial;
+  font-weight: bold;
 }
 @media (min-width: 992px) {
   .faq {
@@ -563,7 +486,7 @@
   .faq .jdl_faq {
     display: flex;
     width: 50%;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 132px;
   }
   .faq .jdl_faq .judul {
@@ -576,47 +499,13 @@
     font-weight: bold;
     font-size: 14px;
   }
-  #accordion_faq {
-    max-width: 600px;
-  }
   .faq_content {
     width: 50%;
     display: flex;
     flex-direction: column;
   }
-  .pertanyaanfaq {
-    max-width: 580px;
-    border: 1px solid black;
-    border-radius: 4px;
-    margin: 14px;
-    display: flex;
-    flex-direction: column;
-  }
-  .faq_pertanyaan {
-    cursor: pointer;
-    background-color: white;
-    border-radius: 4px;
-    padding: 16px;
-    border: none;
-    text-align: left;
-    transition: 0.4s;
-    font-size: 14px;
-    font-family: arial;
-    font-weight: bold;
-  }
-
-  .faq_jawaban {
-    display: none;
-    background-color: white;
-    border-radius: 4px;
-    padding: 16px;
-    overflow: hidden;
-    transition: 0.4s;
-    font-size: 14px;
-    font-family: arial;
-  }
-  .activeFAQ {
-    background-color: gray;
+  .faq_item {
+    max-width: 600px;
   }
 }
 
@@ -649,47 +538,10 @@
   .jdl_faq .wrap_judul {
     padding: 20px;
   }
-  #accordion_faq {
+  .faq_item {
     max-width: 328px;
   }
-  .pertanyaanfaq {
-    border: 1px solid black;
-    border-radius: 4px;
-    margin: 14px;
-    display: flex;
-    flex-direction: column;
-  }
-  .faq_pertanyaan {
-    cursor: pointer;
-    background-color: white;
-    border-radius: 4px;
-    padding: 16px;
-    border: none;
-    text-align: left;
-    transition: 0.4s;
-    font-size: 14px;
-    font-family: arial;
-    font-weight: bold;
-  }
-
-  .faq_jawaban {
-    display: none;
-    background-color: white;
-    border-radius: 4px;
-    padding: 16px;
-    overflow: hidden;
-    transition: 0.4s;
-    font-size: 14px;
-    font-family: arial;
-  }
-  .activeFAQ {
-    background-color: gray;
-  }
-  .wrap_pertanyaanfaq {
-    max-width: 580px;
-  }
 }
-
 /* footer */
 .kaki p {
   font-family: Arial;
@@ -699,3 +551,42 @@
 .connect_us img {
   margin-right: 16px;
 }
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
