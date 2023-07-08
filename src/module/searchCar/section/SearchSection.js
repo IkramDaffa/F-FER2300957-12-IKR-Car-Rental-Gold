@@ -42,7 +42,6 @@ function SearchSection() {
     API.get(`admin/car/${id}`)
       .then((res) => {
         setCarDetail(res.data);
-        console.log(res.data);
       })
       .catch((err) => {
         console.log("error:" + err);
@@ -53,11 +52,9 @@ function SearchSection() {
     const params = `name=${nameCar}&category=${category}&isRented=${isRented}&${mappingPrice(
       price
     )}`;
-    // console.log(params);
     API.get(`admin/v2/car?${params}&page=1&pageSize=10`)
       .then((res) => {
         setData(res.data.cars);
-        // console.log(res.data.cars);
       })
       .catch((err) => {
         console.log("error= " + err);
@@ -95,21 +92,17 @@ function SearchSection() {
     return `${"Rp. "}${parsed}`;
   };
   const handleSumbit = (e) => {
-    e.preventDefault();
     setIsSubmitted(true);
     setResultOpen(true);
     setIsLoading(true);
     fetchData();
-    // console.log(data);
   };
   const handleEdit = (e) => {
-    e.preventDefault();
     setIsSubmitted(false);
     setDetailOpen(false);
     setResultOpen(true);
   };
   const handleBack = (e) => {
-    e.preventDefault();
     setDetailOpen(false);
     setResultOpen(true);
   };
@@ -203,7 +196,11 @@ function SearchSection() {
             </div>
             <div className="col-md-2 d-flex align-items-center">
               {!isSubmitted ? (
-                <button onClick={handleSumbit} className="btn btn-success">
+                <button
+                  type="sumbit"
+                  onClick={handleSumbit}
+                  className="btn btn-success"
+                >
                   Cari Mobil
                 </button>
               ) : (
@@ -259,7 +256,6 @@ function SearchSection() {
                                 className="tmbl_detail"
                                 color="success"
                                 onClick={() => {
-                                  console.log(car.id);
                                   fetchDataCar(car.id);
                                   setDetailOpen(true);
                                   setResultOpen(false);

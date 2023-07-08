@@ -31,21 +31,6 @@
 .detail_kiri li {
   color: gray;
 }
-/* #refund button {
-  font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 0px !important;
-} */
-/* .tmbl_accordion {
-  padding-left: 0px;
-} */
-/* .tmbl_accordion:not(.collapsed) {
-  background-color: white !important;
-  box-shadow: none;
-} */
-/* .body_accordion {
-  padding: 0px;
-} */
 
 #refund .accordion-button {
   padding-left: 0px;
