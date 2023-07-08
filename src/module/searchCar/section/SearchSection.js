@@ -92,20 +92,17 @@ function SearchSection() {
     return `${"Rp. "}${parsed}`;
   };
   const handleSumbit = (e) => {
-    e.preventDefault();
     setIsSubmitted(true);
     setResultOpen(true);
     setIsLoading(true);
     fetchData();
   };
   const handleEdit = (e) => {
-    e.preventDefault();
     setIsSubmitted(false);
     setDetailOpen(false);
     setResultOpen(true);
   };
   const handleBack = (e) => {
-    e.preventDefault();
     setDetailOpen(false);
     setResultOpen(true);
   };
@@ -199,7 +196,11 @@ function SearchSection() {
             </div>
             <div className="col-md-2 d-flex align-items-center">
               {!isSubmitted ? (
-                <button onClick={handleSumbit} className="btn btn-success">
+                <button
+                  type="sumbit"
+                  onClick={handleSumbit}
+                  className="btn btn-success"
+                >
                   Cari Mobil
                 </button>
               ) : (
