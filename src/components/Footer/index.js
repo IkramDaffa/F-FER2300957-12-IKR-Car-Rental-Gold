@@ -20,22 +20,22 @@ function myFooter() {
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <p>
-                <a href="#!" className="text-reset">
+                <a href="/#OurService" className="text-reset">
                   Our services
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="/#tanya" className="text-reset">
                   Why Us
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="/#Testimoni" className="text-reset">
                   Testimonial
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="/#FAQ" className="text-reset">
                   FAQ
                 </a>
               </p>
@@ -43,18 +43,28 @@ function myFooter() {
 
             <div className="connect_us col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Connect with us</h6>
-              <img src={facebook} alt="icon facebook" />
-              <img src={instagram} alt="icon instagram" />
-              <img src={twitter} alt="icon twitter" />
-              <img src={email} alt="icon email" />
-              <img src={twitch} alt="icon twitch" />
+              <a href="facebook.com">
+                <img src={facebook} alt="icon facebook" />
+              </a>
+              <a href="instagram.com">
+                <img src={instagram} alt="icon instagram" />
+              </a>
+              <a href="twitter.com">
+                <img src={twitter} alt="icon twitter" />
+              </a>
+              <a href="gmail.com">
+                <img src={email} alt="icon email" />
+              </a>
+              <a href="twitch.com">
+                <img src={twitch} alt="icon twitch" />
+              </a>
             </div>
 
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
                 Copyright Binar 2022
               </h6>
-              <div className="logo"></div>
+              <div className="logo">Car Rental</div>
             </div>
           </div>
         </div>
