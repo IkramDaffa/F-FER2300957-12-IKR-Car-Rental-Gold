@@ -10,7 +10,7 @@ function FaqSection() {
   const [open, setOpen] = useState("");
   const toggle = (id) => {
     if (open === id) {
-      setOpen();
+      setOpen("");
     } else {
       setOpen(id);
     }
